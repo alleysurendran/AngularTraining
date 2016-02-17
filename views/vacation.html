@@ -1,0 +1,57 @@
+﻿
+<div style="margin:20px 20px 20px 20px">
+
+    <h4>Request Vacation</h4>
+
+    <div class="vacation_table" style="padding:20px 20px 20px 20px">
+
+        <table>
+            <tr>
+                <td class="vaction_remain_text">
+                    <label>No of Vacation Remaining</label>
+                    <label ng-model="remainingVacationCount"></label>
+                </td>
+
+                <td class="vaction_remain_text">
+
+                    <label>No of Loss of Pay Taken</label>
+                    <label ng-model="noOfLossOfPayTaken"></label>
+                </td>
+
+            </tr>
+
+        </table>
+
+        <table>
+
+            <tr>
+
+
+                <td class="vacation_table_cell ">No. of Days</td>
+                <td class="vacation_table_cell">Vacation From</td>
+                <td class="vacation_table_cell">To</td>
+                <td class="vacation_table_cell">Type of Vacation</td>
+                <td class="vacation_table_cell">Send Request To</td>
+
+            </tr>
+
+            <tr>
+                <td><input type="text" ng-model="noOfDays" class="vacation_days" /></td>
+                <td><input type="date" ng-model="vacationFrom" /></td>
+                <td><input type="date" ng-model="vacationTo" /></td>
+
+                <td>
+
+                    <select name="vacationType" data-ng-model="vacationType" ng-options="" id="vacationType" required>
+                        <option value="">Select...</option>
+                    </select>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
